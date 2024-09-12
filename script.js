@@ -7,7 +7,7 @@ let removeBtn = document.querySelector(".remove-btn");
 let toolBoxColors = document.querySelectorAll(".color");
 let addModal = true;
 let removeFlag = false;
-let colors = ['lightpink', 'blue', 'green', 'black']
+let colors = ['orange', 'blue', 'green', 'black']
 let modalPriorityColor = colors[colors.length - 1];
 var uid = new ShortUniqueId();
 
@@ -99,7 +99,7 @@ modalCont.addEventListener("keydown", function (e) {
 
 removeBtn.addEventListener("click", function () {
     if (removeFlag) {
-        removeBtn.style.color = 'black'
+        removeBtn.style.color = ""
     } else {
         removeBtn.style.color = "red"
     }

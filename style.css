@@ -5,76 +5,95 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #f0afd6;
+    background-color:#25c4aa ;
+    /* #cbeaf8; */
 }
 
 .toolbox-cont{
-    height: 5rem;
-    background-color: #191427;
+    height: 6rem;
+    background-color:#03fc0f;
+    /* #5282fb; */
     display: flex;
     align-items: center;
     position:fixed;
+    justify-content:center ;
     width: 100vw;
     top:0px
 }
 
 .toolbox-priority-cont{
-    height: 3rem;
-    background-color: #EEEDDE;
+    height: 4rem;
+    background-color: #c894fc;
     width: 18rem;
-    margin-left: 5rem;
+    margin-left: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-radius: 2px;
+    padding: 0.7rem;
+    border-radius: 3rem;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
 }
 
 .action-btn-cont{
-    background-color: #EEEDDE;
-    height: 3rem;
-    width: 10rem;
-    margin-left: 5rem;
+    background-color: #c093fa;
+    height: 3.5rem;
+    width: 10.5rem;
+    margin-left: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-radius: 2px;
+    border-radius: 2rem;
+    padding: 0.51rem;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.3);
 }
 
 .color{
-    height: 1.5rem;
-    width: 3rem;
+    width: 3.1rem;
+    height: 1.7rem;
 }
 
 .lightpink{
-    background-color:#ff1485e6;
+    background-color:#ff0000;
 }
 
 .blue{
-
+    background-color:rgb(255, 115, 0);
 }
 
 .green{
-    background-color:lightgreen;
+    /* background-color:rgb(0, 255, 0); */
+    background-color:rgb(47, 207, 26);
+    /* background-color:rgb(162, 162, 106); */
+}
+.white{
+    background-color:white;
 }
 .black{
-
+    background-color:rgb(87, 87, 87);
 }
 
-.add-btn{
-    font-size: 1.5rem;
+.add-btn, .remove-btn {
+    font-size: 1.6rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius: 3rem;
 }
 
-.remove-btn{
-    font-size: 1.5rem;
+.add-btn:hover, .remove-btn:hover {
+    background-color: #f6e2bc;
+    color: #26265f;
 }
 
 .modal-cont{
     position: absolute;
-    left: 25vw;
-    top:25vh;
-    background-color: #EEEDDE;
-    height: 50vh;
-    width: 50vw;
+    top:27vh;
+    left: 27vw;
+    background-color: #FFA500;
+    width: 52vw;
+    height: 52vh;
     display: none;
 }
 
@@ -82,17 +101,17 @@ body{
     outline:none;
     resize: none;
     border: none;
-    background-color:#EEEDDE;
+    background-color:#eededf;
     height: 100%;
-    width: 75%;
-    font-size: 2rem;
-    padding: 2rem;
-    border-right: 2px solid #141E27;
+    width: 76%;
+    font-size: 3rem;
+    padding: 3rem;
+    border-right: 3px solid #2e353a;
 }
 
 .priority-color-cont{
     height: 100%;
-    width: 25%;
+    width: 27%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,12 +119,12 @@ body{
 }
 
 .priority-color{
-    height: 3rem;
-    width: 5rem;
+    height: 4rem;
+    width: 6rem;
 }
 
 .active{
-    border: 5px solid #E0DDAA;
+    border: 6px solid #e3de7d;
 }
 
 .main-cont{
@@ -113,41 +132,57 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 2rem; 
-    margin-bottom: 2rem;
+    gap: 2.3rem; 
+    margin-bottom: 2.3rem;
 }
 
 .ticket-cont{
-    background-color: #EEEDDE;
-    height: 10rem;
-    width: 16rem;
+    background-color: #7FFFD4;
+    height: 11rem;
+    width: 17rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 11px 11px 21px rgba(0,0,0,0.3);
 }
 
 .ticket-color{
-    height: 1rem;
+    height: 0.9rem;
+    width: 100%;
 }
 
 .ticket-id{
-    height: 1.5rem;
-    background-color: #EEEDDE;
-    font-weight: 600;
-    font-size: .9rem;
-    color: #141E27;
-    margin-left: 0.3rem;
-    margin-top: 0.3rem;
+    height: 1.3rem;
+    background-color: #A52A2A;
+    font-weight: 601;
+    font-size: .10rem;
+    color: rgb(187, 187, 187);
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+    padding: 0.2rem 0.4rem 0rem 0.4rem;
+    border-radius: 0.6rem;
 }
 
 .task-area{
-    height: 5rem;
-    padding-left: 0.3rem;
+    height: 6rem;
+    padding-left: 0.5rem;
     padding-right: 0.3rem;
-    font-size: 1.25rem;
+    font-size: 1.26rem;
     overflow: auto;
     outline: none;
     word-break: break-all;
 }
 
 .lock-unlock{
-    font-size: 1.5rem;
-    margin-left: 14.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.10rem;
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.lock-unlock i:hover {
+    color: #1e004d;
 }
